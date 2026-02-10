@@ -2,16 +2,22 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Transaction {
+    private final int id;
     private final SimpleStringProperty description;
     private final SimpleDoubleProperty amount;
     private final SimpleStringProperty category;
     private final boolean isExpense;
 
-    public Transaction(String description, double amount, String category, boolean isExpense) {
+    public Transaction(int id, String description, double amount, String category, boolean isExpense) {
+        this.id = id;
         this.description = new SimpleStringProperty(description);
         this.amount = new SimpleDoubleProperty(amount);
         this.category = new SimpleStringProperty(category);
         this.isExpense = isExpense;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getDescription() {
@@ -54,9 +60,3 @@ public class Transaction {
         return isExpense;
     }
 }
-
-
-
-
-
-  
