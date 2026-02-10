@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "WealthWatch",
+      "request": "launch",
+      "mainClass": "WealthWatch"
+    }
+  ]
+}

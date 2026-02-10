@@ -1,0 +1,101 @@
+/* General styling for the application */
+.root {
+    -fx-font-family: Arial, sans-serif;
+    -fx-background-image: url(''); /* Replace with your image path */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-alignment: center;
+}
+
+/* Layout for VBox */
+.vbox {
+    -fx-spacing: 15;
+    -fx-padding: 20;
+    -fx-alignment: center;
+}
+
+/* Login and Registration Page */
+#login-page, #registration-page {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    -fx-padding: 30px;
+    -fx-spacing: 20px;
+    -fx-background-radius: 10px;
+    -fx-max-width: 400px;
+    -fx-alignment: center;
+}
+
+/* Style for buttons */
+.button-yellow {
+    -fx-background-color: #ffcc00;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 24px;
+    -fx-border-radius: 8px;
+}
+
+.button-yellow:hover {
+    -fx-background-color: #ffcc00;
+}
+
+.button-white {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 24px;
+    -fx-border-radius: 8px;
+}
+
+.button-white:hover {
+    -fx-background-color: #f2f2f2;
+}
+
+/* Style for labels */
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #665500;
+    -fx-font-weight: bold;
+    -fx-padding-bottom: 10px;
+}
+
+/* Style for input fields */
+.text-field {
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #ffcc00;
+    -fx-background-color: #fff9e6;
+    -fx-font-size: 14px;
+}
+
+.password-field {
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #ffcc00;
+    -fx-background-color: #fff9e6;
+    -fx-font-size: 14px;
+}
+
+/* Style for DatePicker */
+.date-picker {
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #ffcc00;
+    -fx-background-color: #fff9e6;
+}
+
+/* Add subtle shadow to the Login and Registration boxes */
+#login-page, #registration-page {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.2, 0, 5);
+}
+
+/* Transition effects for hover */
+.button-yellow, .button-white {
+    -fx-transition: all 0.3s ease;
+}
+
+.text-field, .password-field, .date-picker {
+    -fx-transition: border-color 0.3s ease;
+}
+
+.text-field:focused, .password-field:focused, .date-picker:focused {
+    -fx-border-color: #e6b800; /* Darker yellow on focus */
+}
