@@ -1,4 +1,4 @@
-# WealthWatch - Personal Finance Manager
+# WealthWatch - Personal Finance Manager using JAVA
 
 WealthWatch is a simple yet powerful personal finance application built with JavaFX and SQLite. It helps you track your income and expenses, visualize your spending with charts, and manage your budget effectively.
 
