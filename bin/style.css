@@ -1,7 +1,7 @@
 /* General styling for the application */
 .root {
     -fx-font-family: Arial, sans-serif;
-    -fx-background-image: url(''); /* Replace with your image path */
+    /* -fx-background-image: url(''); Replace with your image path */
     -fx-background-size: cover;
     -fx-background-position: center;
     -fx-alignment: center;
